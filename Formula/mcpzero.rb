@@ -2,8 +2,8 @@
 #
 # Distributed as compiled binaries — installing this does not require the CLI
 # source. The CLI repo's `scripts/release.sh` bumps `version` and the four
-# `sha256` values on each CLI release; the URLs point at the MCPZERO download
-# channel (served from R2 under https://mcpzero.io/dl/).
+# `sha256` values on each CLI release; the URLs point at the cli repo's GitHub
+# Release assets (github.com/mcpzero/cli/releases).
 #
 #   brew install mcpzero/tap/mcpzero
 #
@@ -12,7 +12,7 @@ class Mcpzero < Formula
   homepage "https://mcpzero.io"
   version "0.1.1"
 
-  BASE = "https://mcpzero.io/dl/v#{version}".freeze
+  BASE = "https://github.com/mcpzero/cli/releases/download/v#{version}".freeze
 
   on_macos do
     on_arm do

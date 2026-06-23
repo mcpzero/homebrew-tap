@@ -10,8 +10,8 @@ brew install mcpzero/tap/mcpzero
 
 ## How releases work
 
-The formula in `Formula/mcpzero.rb` installs **prebuilt binaries** from the
-MCPZERO download channel (served from R2 under `https://mcpzero.io/dl/`) — no
+The formula in `Formula/mcpzero.rb` installs **prebuilt binaries** from the cli
+repo's [GitHub Release assets](https://github.com/mcpzero/cli/releases) — no
 source needed. On each CLI release, the CLI repo's release script regenerates
 this formula with the new `version` and the per-platform `sha256` values, and
 commits it here.
