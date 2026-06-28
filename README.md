@@ -3,14 +3,14 @@
 Homebrew tap for the [MCPZERO](https://mcpzero.io) CLI.
 
 ```bash
-brew install mcpzero/tap/mcpzero
+brew install mcpzero/tap/mcpzero-cli
 ```
 
-(equivalent to `brew tap mcpzero/tap && brew install mcpzero`.)
+(equivalent to `brew tap mcpzero/tap && brew install mcpzero-cli`.)
 
 ## How releases work
 
-The formula in `Formula/mcpzero.rb` installs **prebuilt binaries** from the cli
+The formula in `Formula/mcpzero-cli.rb` installs **prebuilt binaries** from the cli
 repo's [GitHub Release assets](https://github.com/mcpzero/cli/releases) — no
 source needed. On each CLI release, the CLI repo's release script regenerates
 this formula with the new `version` and the per-platform `sha256` values, and
