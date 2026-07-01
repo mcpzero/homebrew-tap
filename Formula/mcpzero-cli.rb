@@ -10,29 +10,29 @@
 class McpzeroCli < Formula
   desc "MCPZERO tunnel client — expose a local MCP server through the MCPZERO gateway"
   homepage "https://mcpzero.io"
-  version "0.1.8"
+  version "0.1.9"
 
   BASE = "https://github.com/mcpzero/mcpzero/releases/download/v#{version}".freeze
 
   on_macos do
     on_arm do
       url "#{BASE}/mcpzero-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "4b33e494853b11302218aa75d09235c8a212994841e5ef5568925138f3241eed"
+      sha256 "961551986629dadaeb1f3e5cd8b98257526456b4fdaadaa5379b85b5bd154318"
     end
     on_intel do
       url "#{BASE}/mcpzero-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "3b2676a79ecfe5deac5d4f9aca8393a2d0b2b0ca2f80ed3d71cecc45f750959b"
+      sha256 "f386a728b0e639f49ce16fd1b6da8539c945ab6f8c4dcf2bb271cc885bf0131d"
     end
   end
 
   on_linux do
     on_arm do
       url "#{BASE}/mcpzero-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "d50d5d28c88390087188d2427daab7149a068751601f9aa85998c46549fe1a8c"
+      sha256 "f40643960c7549ea2cf618140ed9ae1b7d3956e79c5d4d59fb5da142211ba0b3"
     end
     on_intel do
       url "#{BASE}/mcpzero-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "9976cb1850384175b4b884a06f57d2a5040d8451507d05b1d5593f1b89bc347c"
+      sha256 "7c7b1ac60ed6d87ef49c8ccd2ed80c33f75208e9279466045c8de62713b48923"
     end
   end
 
